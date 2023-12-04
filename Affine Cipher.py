@@ -135,8 +135,8 @@ def multiplicative_decrypt(cipher_text, key):
 plain_text_input = input(
     "Enter the plain text: "
 )  # take the plain text as input from the user
-m = int(input("Enter the m: "))  # take the m as input from the user
-k = int(input("Enter the k: "))  # take the k as input from the user
+m = int(input("Enter the multiplicative key: "))  # take the m as input from the user
+k = int(input("Enter the additive key: "))  # take the k as input from the user
 
 # key is a tuple consisting of m and k (m is the multiplicative key and k is the additive key)
 key = (m, k)
