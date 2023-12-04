@@ -28,7 +28,8 @@ def additive_encrypt(plain_text: str, key: int):
             )  # chr() returns the character corresponding to the ASCII value
         else:
             cipher_text += char  # if the character is not an alphabet
-    return cipher_text
+
+    return cipher_text  # return the encrypted text
 
 
 def additive_decrypt(cipher_text, key):
@@ -56,6 +57,7 @@ def rot13_encrypt(plain_text):
     Returns:
     -   str: The encrypted text.
     """
+
     return additive_encrypt(plain_text, 13)  # 13 is the key for rot13 encryption
 
 
@@ -69,6 +71,7 @@ def rot13_decrypt(cipher_text):
     Returns:
     -   str: The decrypted text.
     """
+
     return additive_decrypt(cipher_text, 13)  # -13 is the key for rot13 decryption
 
 
