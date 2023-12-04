@@ -61,10 +61,10 @@ def atbash_decrypt(cipher_text):
     return decrypted_text  # return the decrypted text
 
 
-input_text = input("Enter the text to encrypt: ")  # take the plain text as input
+plain_text_input = input("Enter the text to encrypt: ")  # take the plain text as input
 
 # Encrypt and decrypt the plain text
-cipher_text = atbash_encrypt(input_text)
+cipher_text = atbash_encrypt(plain_text_input)
 plain_text = atbash_decrypt(cipher_text)
 
 # Print the results
